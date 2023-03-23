@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="ArchorPane" prefHeight="289.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prtinterfaz3.HelloController">
+   <children>
+      <Label layoutX="20.0" layoutY="20.0" text="Nombre" />
+       <TextField fx:id="nombre" layoutX="14.0" layoutY="40.0" />
+      <Label layoutX="20.0" layoutY="85.0" text="Apellidos" />
+       <TextField fx:id="apellidos" layoutX="14.0" layoutY="105.0" />
+      <Label layoutX="20.0" layoutY="150.0" text="Edad" />
+       <TextField fx:id="edad" layoutX="14.0" layoutY="170.0" />
+      <TableView fx:id="tabla" layoutX="200.0" layoutY="20.0" prefHeight="224.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="tNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="tApellidos" prefWidth="75.0" text="Apellidos" />
+           <TableColumn fx:id="tEdad" prefWidth="75.0" text="Edad" />
+        </columns>
+      </TableView>
+      <Button fx:id="boton" layoutX="35.0" layoutY="220.0" mnemonicParsing="false" text="Agregar Persona" onAction="#meterPersona" />
+   </children>
+</AnchorPane>
